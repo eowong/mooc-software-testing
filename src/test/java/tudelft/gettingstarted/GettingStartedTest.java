@@ -6,22 +6,22 @@ import org.junit.jupiter.api.Test;
 public class GettingStartedTest {
 
     @Test
-    public void addFiveTo20() {
+    public void addFiveToTwenty() {
         int result = new GettingStarted().addFive(20);
-        Assertions.assertEquals(25,result);
+        Assertions.assertEquals(25, result);
     }
 
-//    UNCOMMENT THE CODE BELOW, AND FILL THE GAPS!
+    @Test
+    //Add the Correct numbers
+    public void addFiveToZero() {
+        int result = new GettingStarted().addFive(0);
+        Assertions.assertEquals(5, result);
+    }
 
-//    @Test
-//    public void addFiveToZero() {
-//        int result = new GettingStarted().addFive(???);
-//        Assertions.assertEquals(???, result);
-//    }
-//
-//    @Test
-//    public void addFiveToMinus20() {
-//        int result = new GettingStarted().addFive(???);
-//        Assertions.assertEquals(????,result);
-//    }
+    @Test
+    //Write this test
+    public void addFiveToMinusTwenty() {
+        int result = new GettingStarted().addFive(-20);
+        Assertions.assertEquals(-15, result);
+    }
 }
